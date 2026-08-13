@@ -1,0 +1,37 @@
+{
+  "name": "@b4moss/mpa-html-site-starter",
+  "version": "0.2.0",
+  "description": "Scaffold a Vite + Vituum + Twig multi-page static site",
+  "type": "module",
+  "bin": {
+    "mpa-html-site-starter": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "template"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "vite",
+    "vituum",
+    "twig",
+    "mpa",
+    "static-site",
+    "starter",
+    "scaffold"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b4m-oss/mpa-html-site-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/b4m-oss/mpa-html-site-starter/issues"
+  },
+  "homepage": "https://github.com/b4m-oss/mpa-html-site-starter#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

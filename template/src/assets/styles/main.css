@@ -1,0 +1,42 @@
+@import 'reset-css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+@import 'partials/utilities.css';
+@import 'partials/base.css';
+@import 'partials/layout.css';
+@import 'context/header.css';
+
+/*
+  レスポンシブ概念
+  - PC: min-width: 1400px, content-width: 1200px
+  - Tablet: min-width: 720px, content-width: fluid
+  - Fablet: min-width: 440px, content-width: fluid
+  - Mobile: max-width: 439px, content-width: fluid 
+*/
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main, #main {
+  flex: 1;
+}
+
+
+#global-footer {
+  padding-top: 0;
+  padding-bottom: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  .copyright {
+    --fz: var(--dashi-fz);
+    --fz-ratio: 0.625;
+    border-top: 1px solid var(--dashi-stroke);
+    padding-top: 7px;
+    font-size: calc(var(--fz) * var(--fz-ratio));
+    text-align: center;
+  }
+}
+

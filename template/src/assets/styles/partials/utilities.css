@@ -1,0 +1,23 @@
+.hide-for-mb {
+  display: none;
+}
+
+.show-for-mobile {
+  display: initial;
+}
+
+.show-for-pc {
+  display: none;
+}
+
+@media (min-width: 460px) {
+  .hide-for-mb {
+    display: initial;
+  }
+  .hide-for-pc {
+    display: none;
+  }
+  .show-for-pc {
+    display: initial;
+  }
+}
