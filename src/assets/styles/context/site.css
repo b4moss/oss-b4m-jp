@@ -128,40 +128,49 @@
 
 .hero__motif {
   position: absolute;
-  inset: 8% 0 8% 8%;
-  border-radius: 0;
+  inset: 6% 0 10% 12%;
   overflow: hidden;
   /* 中面積の質感帯。グラデはごく弱い色差のみ */
   background:
     linear-gradient(
-      165deg,
-      color-mix(in srgb, var(--motif-1) 70%, var(--bg)) 0%,
-      var(--motif-2) 48%,
-      color-mix(in srgb, var(--motif-3) 80%, var(--motif-deep)) 100%
+      158deg,
+      color-mix(in srgb, var(--motif-1) 55%, var(--bg)) 0%,
+      var(--motif-2) 42%,
+      color-mix(in srgb, var(--motif-3) 70%, var(--motif-deep)) 100%
     );
   isolation: isolate;
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
 }
 
 .hero__motif::before {
   content: "";
   position: absolute;
-  inset: 0;
-  opacity: 0.55;
-  /* 木目／土に近い筋。図形アイコンには見せない */
+  inset: -5%;
+  opacity: 0.72;
+  /* 木目／土に近い不規則な筋。図形アイコンには見せない */
   background:
     repeating-linear-gradient(
-      98deg,
-      transparent 0 7px,
-      color-mix(in srgb, var(--motif-deep) 16%, transparent) 7px 8px,
-      transparent 8px 15px,
-      color-mix(in srgb, #fff 12%, transparent) 15px 16px
+      101deg,
+      transparent 0 5px,
+      color-mix(in srgb, var(--motif-deep) 22%, transparent) 5px 6px,
+      transparent 6px 13px,
+      color-mix(in srgb, #fff 18%, transparent) 13px 14px,
+      transparent 14px 22px,
+      color-mix(in srgb, var(--ink) 8%, transparent) 22px 23px
     ),
     repeating-linear-gradient(
-      12deg,
-      transparent 0 11px,
-      color-mix(in srgb, var(--ink) 5%, transparent) 11px 12px
+      8deg,
+      transparent 0 9px,
+      color-mix(in srgb, var(--ink) 7%, transparent) 9px 10px,
+      transparent 10px 19px
+    ),
+    repeating-linear-gradient(
+      -14deg,
+      transparent 0 17px,
+      color-mix(in srgb, var(--motif-deep) 10%, transparent) 17px 18px
     );
   mix-blend-mode: multiply;
+  transform: translate3d(0, 0, 0);
 }
 
 .hero__motif::after {
@@ -170,16 +179,16 @@
   inset: 0;
   background:
     radial-gradient(
-      120% 80% at 70% 20%,
-      color-mix(in srgb, #fff 22%, transparent),
-      transparent 55%
+      110% 75% at 78% 18%,
+      color-mix(in srgb, #fff 28%, transparent),
+      transparent 52%
     ),
     radial-gradient(
-      90% 70% at 20% 90%,
-      color-mix(in srgb, var(--motif-deep) 28%, transparent),
-      transparent 60%
+      95% 80% at 12% 88%,
+      color-mix(in srgb, var(--motif-deep) 36%, transparent),
+      transparent 58%
     );
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .hero__motif-noise {
@@ -187,7 +196,7 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.28;
+  opacity: 0.38;
   mix-blend-mode: soft-light;
   pointer-events: none;
 }
