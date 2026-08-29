@@ -1,0 +1,5 @@
+@import 'reset-css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@350;400;500;600&display=swap');
+@import 'partials/tokens.css';
+@import 'partials/base.css';
+@import 'context/site.css';

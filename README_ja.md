@@ -1,26 +1,20 @@
-# @b4moss/mpa-html-site-starter
+# b4moss / oss.b4m.jp（スパイク）
 
-[English](README.md) | [日本語](README_ja.md)
+合同会社 知的・自転車 OSS 部門のピラーページ試作。
 
-Vite + Vituum + Twig のマルチページ静的サイト雛形をスキャフォールドします。
+合意事項: https://github.com/b4moss/oss-b4m-jp/issues/1
 
-## Usage
+## 開発
 
-```shell
-npx @b4moss/mpa-html-site-starter my-site
-cd my-site
+```bash
 npm i
 npm run dev
 ```
 
-## Scripts（生成後のプロジェクト）
+Codespaces では転送されたポートでプレビューしてください。
 
-| Script | 内容 |
-| --- | --- |
-| `npm run dev` | 開発サーバ |
-| `npm run build` | 本番ビルド |
-| `npm run preview` | ビルド結果のプレビュー |
+## いまの範囲
 
-## License
-
-MIT License
+- MainVisual（案M）+ 受け まで
+- 製品一覧は未実装
+- ヒーローコピーは仮置き

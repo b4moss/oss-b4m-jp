@@ -1,0 +1,19 @@
+:root {
+  /* ほぼニュートラル。ごく薄い暖み（紙／土寄り） */
+  --bg: #f4f3f1;
+  --bg-elevated: #faf9f7;
+  --ink: #2e2e2c;
+  --ink-soft: #5e5d59;
+  --ink-faint: #8a8984;
+  --line: #dddcd7;
+  --motif-1: #d8d2c8;
+  --motif-2: #c4bdb2;
+  --motif-3: #b0a89c;
+  --motif-deep: #9a9286;
+
+  --font: "Noto Sans JP", sans-serif;
+  --fz: 17.5px;
+  --lh: 1.65;
+  --content-max: 68rem;
+  --pad-x: clamp(1.25rem, 4vw, 3.5rem);
+}
