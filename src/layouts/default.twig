@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  {% block startHead %}{% endblock %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default('b4moss — Bicycle for Mind OSS') }}</title>
+  <meta name="description" content="{{ description | default('合同会社 知的・自転車のOSS部門 b4moss の製品一覧。') }}">
+  <link rel="stylesheet" href="/src/assets/styles/main.css">
+  {% block endHead %}{% endblock %}
+</head>
+<body>
+  {% block startBody %}{% endblock %}
+  {% block header %}{% endblock %}
+  <main class="site-main">
+    {% block main %}{% endblock %}
+  </main>
+  {% block footer %}{% endblock %}
+  {% block endBody %}{% endblock %}
+  <script type="module" src="/src/assets/scripts/main.ts"></script>
+  {% block lastScripts %}{% endblock %}
+</body>
+</html>

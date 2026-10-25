@@ -1,0 +1,49 @@
+{% extends "layouts/default.twig" %}
+
+{% set title = "b4moss — Bicycle for Mind OSS" %}
+{% set description = "実務で使う道具を、公開し続ける。合同会社 知的・自転車のOSS部門 b4moss。" %}
+
+{# ヒーローコピーは仮置き（選定は初回デザイン後） #}
+{% set tagline = "実務で使う道具を、公開し続ける。" %}
+{% set lead = "開発の現場で必要になった仕組みを、そのままOSSとして整えています。派手さより、使う人が迷わない設計を優先します。" %}
+{% set intro = "小さくても、現場で使い続けられること。b4moss は、必要から生まれた道具を公開し、技術選定の判断材料になるよう一覧しています。" %}
+
+{% block header %}
+{% include 'components/layouts/header.twig' %}
+{% endblock %}
+
+{% block main %}
+<section class="hero" aria-label="メインビジュアル">
+  <div class="hero__stage">
+    <div class="hero__copy">
+      <p class="hero__eyebrow">OSS</p>
+      <h1 class="hero__tagline">{{ tagline }}</h1>
+      <p class="hero__lead">{{ lead }}</p>
+      <p class="hero__attribution">b4mossは、合同会社　知的・自転車のOSS部門です</p>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      {# 案M: 中面積の抽象質感帯（木目／土。アイコン化しない） #}
+      <div class="hero__motif">
+        <svg class="hero__motif-noise" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <filter id="motif-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch" />
+            <feColorMatrix type="saturate" values="0" />
+          </filter>
+          <rect width="100%" height="100%" filter="url(#motif-noise)" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="intro__inner">
+    <p class="intro__text">{{ intro }}</p>
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{% include 'components/layouts/footer.twig' %}
+{% endblock %}
